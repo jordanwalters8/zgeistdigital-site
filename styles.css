@@ -44,9 +44,15 @@ body {
   letter-spacing: 0.08em;
 }
 
+/* NAV */
 .site-nav a {
   margin-left: 20px;
   color: var(--muted);
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: white;
 }
 
 /* HERO */
@@ -122,20 +128,17 @@ h1 {
   margin-top: 20px;
 }
 
-input, textarea {
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 12px;
-  background: transparent;
-  border: 1px solid var(--border);
-  color: white;
+.contact-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding-bottom: 4px;
 }
 
-button {
-  padding: 12px 20px;
-  background: white;
-  border: none;
-  cursor: pointer;
+.contact-link:hover {
+  border-color: white;
 }
 
 /* MOBILE */
