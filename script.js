@@ -1,6 +1,8 @@
-const revealItems = document.querySelectorAll(".hero, .services, .contact");
+const sections = document.querySelectorAll("section");
 
-revealItems.forEach((item) => item.style.opacity = 0);
+sections.forEach(section => {
+  section.style.opacity = 0;
+});
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -11,4 +13,4 @@ const observer = new IntersectionObserver(entries => {
   });
 });
 
-revealItems.forEach(item => observer.observe(item));
+sections.forEach(section => observer.observe(section));
