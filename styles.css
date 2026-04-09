@@ -32,7 +32,8 @@ body {
 }
 
 .brand-logo {
-  width: 40px;
+  width: 64px;
+  height: auto;
 }
 
 .brand-text {
